@@ -1,0 +1,117 @@
+
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  div.container{
+    margin: 0 auto;
+  }
+  header{
+    background-color:rgb(228, 206, 170);
+  }
+
+
+.flex-container {
+  display: flex;
+  background-color: #7e7c7c;
+}
+
+.flex-container > div{
+  flex: 1;
+background-color: rgb(228, 213, 190);
+margin: 5px;
+padding: 5px;
+width: auto;
+justify-content: space-between;
+font-size: small;
+font-weight: 2px;
+text-align: center;
+}
+
+    
+  img.logo{
+    height: 50px;
+    width: auto;  
+    max-width: 100px;
+    margin-right: 1rem;
+  }
+  
+  .hero img{
+    width: 100%;
+  }
+  div.left, div.middle, div.right{
+    border: 3px solid rgba(0, 20, 94, 0.688);
+    border-width: 1ex 2ex 1ex;
+    border-radius: 5px;
+    width: 30%;
+  }
+  
+  aside img{
+    width: 100%; height: 100%;
+  }
+  
+  aside{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav{
+    background-color: rgb(126, 126, 126);
+  
+  }
+  ul{
+    text-align: center;
+  
+  }
+  li{
+    display: inline-block;
+    width: 19%;
+    border: 2px solid rgba(212, 212, 212, 0.534);
+    line-height: 1.5em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-variant: small-caps;
+  
+  }
+
+  a{
+    color: aliceblue;
+    text-decoration: none;
+    border: 1px solid rgb(128, 118, 118);
+    display: block;
+  }
+  
+  main img{
+    width: 100%;
+  }
+
+  footer {
+    background: #cdcdcd;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  div.button { 
+    padding-block: 1px;
+    padding-inline: 6px;
+    text-align: center;
+  }
+
+/****
+  Media Queries
+****/
+  @media screen and (max-width:500px) {
+    .nav {
+      flex-direction: column;
+    }
+    .nav ul{
+      flex-direction: column;
+    }
+    div.content-box{
+      flex-direction: column
+    }
+  }
+
+  
